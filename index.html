@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Bento_style</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Hebrew:wght@100;200;300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montaga&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <style type="text/tailwindcss">
+        @theme {
+        --color-body: #161616;
+        --color-grid: #1B1B1B;
+        --color-bordure: #262626;
+        --color-texte: #F35034;
+        --color-contentext: #C0C0C0;
+        --color-hover: oklch(64.6% 0.222 41.116);
+        --font-nav:'Inter';
+        --color-btn:#E63E21;
+        --color-borderbtn:#E4643F;
+        --color-gridhover:oklch(27.5% 0.011 216.9);
+        --color-link:#F35034;
+
+
+      }
+    </style>
+        <link rel="shortcut icon" href="./img/Vector (1).png" style="image/x-icon">
+</head>
+
+<body class="bg-body flex  flex-col items-center">
+    <!-- Affichage mobile -->
+    <div class="mx-13 py-13 flex justify-center items-center gap-2">
+        <div class=" border-2 border-bordure rounded-4xl w-[49.3px] h-12 relative bg-grid">
+            <a href="#">
+                <img src="./img/Vector (1).png" alt="logo"
+                    class="absolute top-2 left-[8.2px] sm:top-2  sm:left-[8.7px]">
+            </a>
+        </div>
+        <div
+            class="border-2 border-bordure flex justify-between bg-grid w-[283px] sm:w-[1152px] h-[44px] sm:h-[64px] rounded-4xl items-center">
+            <a href="#about">
+                <li class="hover:text-hover active:text-texte ml-10 sm:ml-20 mr-28 text-white list-none font-nav">ABOUT
+                </li>
+            </a>
+            <ul class="hidden sm:flex gap-[26rem] items-center ml-10 text-white  font-nav">
+                <a href="#portfolio">
+                    <li class="hover:text-hover active:text-texte ml-24">PORTFOLIO</li>
+                </a>
+                <a href="#contact">
+                    <li class="hover:text-hover active:text-texte ">CONTACT</li>
+            </ul>
+            </a>
+            <img src="./img/mi_menu.png" alt="menu" class="sm:hidden mr-4">
+        </div>
+    </div>
+    <!--about section -->
+    <section id="about"
+        class=" border-2 border-bordure bg-grid rounded-xl mx-17 p-9  h-[389px] sm:h-[408.01px] sm:w-[1215px] hover:bg-gridhover">
+        <div class=" flex flex-col-reverse sm:flex-row justify-between">
+            <p class="text-contentext text-[16px] sm:text-[24px] font-nav pt-4 sm:pt-0">UI/UX Designer</p>
+            <div
+                class="border-2 border-bordure text-[13px] text-contentext  flex justify-center items-center bg-body border-1 border-bordure rounded-4xl gap-2 h-[26px] w-[181px]">
+                <div class="bg-texte rounded-4xl w-2 h-2"> </div>
+                AVAILABLE FOR JOB
+            </div>
+            
+        </div>
+        <div class="flex flex-col-reverse sm:flex-row sm:gap-[30rem] sm:mt-3">
+            <div class="w-[288px] sm:w-[288px]  h-[91px] sm:h-[119px] mt-7">
+                <h1 class=" text-[24px] sm:text-[36px] text-white font-semibold font-nav">I’m Zainab Nisa</h1>
+                <p class="text-[16px] sm:text-[20px] text-contentext font-nav"> design digital products with <br> great
+                    experience.</p>
+
+                <div class="flex gap-2 mt-5">
+                    <div
+                        class="flex border-1 border-borderbtn w-[84px] sm:w-[108px]  h-[33px] sm:h-[42.01px] rounded-[7px] bg-btn">
+                        <button
+                            class="bg-btn backdrop-blur-sm rounded-[7px] w-[59px] sm:w-[79px] text-[11px] sm:text-[16px] text-white font-nav">Hire
+                            me</button>
+                        <div class="flex items-center justify-center border-1 border-btn border-l-bordure">
+                            <img src="./img/Vector (4).png" alt="plus">
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex  border-1 border-bordure  w-[100px] h-[33px] sm:h-[42.01px] sm:w-[143px] rounded-[7px]">
+                        <button class="w-[77px] sm:w-[113px] text-[11px] sm:text-[16px] text-white font-nav">Copy
+                            Email</button>
+                        <div class="flex items-center justifier-center border-1 border-none border-l-bordure">
+                            <a href="#">
+                            <img src="./img/Vector (3).png" alt="copy" class="">
+                              </a>  
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="h-[80px] sm:h-[178px] w-[80px] sm:w-[178px] mt-4 sm:mt-0">
+                <img src="./img/Ellipse 61.png" alt="image" class="rounded-full object-cover sm:ml-42 sm:mt-10">
+            </div>
+        </div>
+    </section>
+    <!-- section portfolio -->
+
+    <section id="portfolio" class="mx-15 p-2 sm:flex gap-3">
+        <div class="1">
+            <div
+                class=" border-2 border-bordure  sm:w-[594px] sm:h-[540px] p-6 sm:py-11 bg-grid rounded-xl hover:bg-gridhover">
+                <div
+                    class=" flex  gap-2 items-center sm:w-[168px] sm:h-[29px]  sm:text-[24px] text-white font-nav text-[15px]">
+                    <div class="bg-contentext rounded-4xl w-2 h-2"></div>
+                    Recent Work
+                </div>
+                <div class="mt-10 font-nav  flex flex-col gap-5 sm:mt-14  ">
+                    <div class="flex gap-21 sm:gap-[22rem] text-contentext">
+                        <div class="text-contentext ">
+                            <p class="text-texte hover:text-hover cursor-pointer"> Product designer</p>
+                            <p class=" text-[12px] sm:text-[14px] mt-2">2023 - Present</p>
+                        </div>
+                        <div class=" text-[12px] sm:text-[14px]">Figma</div>
+                    </div>
+                    <div class="flex gap-23 sm:gap-[23rem] text-contentext">
+                        <div class="text-contentext">
+                            <p class="text-white hover:text-hover cursor-pointer"> UI/UX designer</p>
+                            <p class=" text-[12px] sm:text-[14px] mt-2">2021 - 2022</p>
+                        </div>
+                        <div class="text-[12px] sm:text-[14px]">Google</div>
+                    </div>
+                    <div class="flex gap-21 sm:gap-[22rem] text-contentext">
+                        <div class="text-contentext"">
+                            <p class=" text-white hover:text-hover cursor-pointer"> Product designer</p>
+                            <p class=" text-[12px] sm:text-[14px] mt-2">2023 - Present</p>
+                        </div>
+                        <div class=" text-[12px] sm:text-[14px]">Figma</div>
+                    </div>
+                    <div class="flex gap-21 sm:gap-[22rem] text-contentext">
+                        <div class="text-contentext"">
+                            <p class=" text-white hover:text-hover cursor-pointer"> Product designer</p>
+                            <p class=" text-[12px] sm:text-[14px] mt-2">2023 - Present</p>
+                        </div>
+                        <div class=" text-[12px] sm:text-[14px]">Figma</div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-2 border-bordure mt-7 p-6 bg-grid rounded-xl sm:h-[590px]">
+                <div class="flex  gap-[9rem] sm:gap-[23rem]">
+                    <div class="font-nav w-[109px]">
+                        <p class=" text-[14px] sm:text-[20px] text-white">iOS Mobile app</p>
+                        <p class=" text-[12px] sm:text-[14px] text-contentext">Product develop</p>
+                    </div>
+                    <div class=" w-[30px] h-[30px] justify-center items-center flex rounded-full bg-texte">
+                        <img src="./img/Vector (2).png" alt="vector2">
+                    </div>
+                </div>
+                <div class="flex justify-center items-center mt-15">
+                    <img src="./img/iPhone Space gray.png" alt="iphone">
+                </div>
+            </div>
+        </div>
+
+        <div class="2">
+            <div class="21 mt-2 sm:mt-0">
+                <div class="font-nav sm:text-[17px] text-white ">
+                    <div class="sm:w-[610px] h-[51px] sm:h-[73px] flex items-center justify-center rounded-xl relative border-2 border-transparent"
+                        style="background: 
+                linear-gradient(#161616, #161616) padding-box, 
+                radial-gradient(circle at top right, #F35034, #262626 50%) border-box;">
+
+                        <div class="absolute inset-0 bg-grid opacity-50 rounded-xl"></div>
+
+                        <span class="text-white font-nav sm:text-[17px] relative z-10">Product design</span>
+                    </div>
+                    <div class="flex gap-2 items-center justify-center">
+                        <div
+                            class="w-[170px] sm:w-[300px] h-[49px] sm:h-[73px] border-2 border-transparent my-2 flex items-center justify-center rounded-xl  bg-grid" style="background: 
+                linear-gradient(#161616, #161616) padding-box, 
+                radial-gradient(circle at top right, #F35034, #262626 50%) border-box;">
+                            User Experience</div>
+                        <div
+                            class="w-[170px] sm:w-[300px] h-[49px] sm:h-[73px] border-2 border-transparent my-2 flex items-center justify-center rounded-xl bg-grid" style="background: 
+                linear-gradient(#161616, #161616) padding-box, 
+                radial-gradient(circle at bottom left, #F35034, #262626 50%) border-box;">
+                            NoCode develop</div>
+                    </div>
+                </div>
+            </div>
+            <div class="22 border-2 border-bordure mt-2 sm:w-[610px] p-6 bg-grid rounded-xl sm:h-[520px]">
+                <div class="flex  gap-[9rem] sm:gap-[13rem]">
+                    <div class="font-nav sm:w-[286px] ">
+                        <p class=" text-[14px] sm:text-[17px] text-white">AI Music product</p>
+                        <p class=" text-[12px] sm:text-[14px] text-contentext">UX Case study</p>
+                    </div>
+                    <div class="w-[30px] h-[30px] justify-center items-center flex rounded-full bg-texte">
+                        <img src="./img/Vector (2).png" alt="vector2">
+                    </div>
+                </div>
+                <div class="flex items-center justify-center  mt-9 relative h-[435px]">
+                    <div class="w-[20px] sm:w-[348px] h-[20px] sm:h-[348px]">
+                        <img src="./img/Music1.png" alt="musique"
+                            class="absolute object-cover right-[7.5px] top-15 rotate-[-2deg] sm:left-37  sm:top-9 sm:rotate-[3deg]">
+                    </div>
+                    <div class="w-[20px] sm:w-[348px] h-[20px] sm:h-[348px]">
+                        <img src="./img/Music.png" alt="musique"
+                            class="absolute  object-cover right-[7.5px] top-13 rotate-[-3deg] sm:right-34 sm:top-7 sm:rotate-[-4deg]">
+                    </div>
+                </div>
+            </div>
+            <div class="23 border-2 border-bordure mt-2 p-6 h-[450px] sm:h-[457px] bg-grid rounded-xl">
+                <div class="flex  gap-[9rem] sm:gap-[13rem]">
+                    <div class="font-nav sm:w-[286px] ">
+                        <p class=" text-[14px] sm:text-[17px] text-white">AI Map redesign</p>
+                        <p class=" text-[12px] sm:text-[14px] text-contentext">UX Case study</p>
+                    </div>
+                    <div class="w-[30px] h-[30px] justify-center items-center flex rounded-full bg-texte">
+                        <img src="img/Vector (2).png" alt="vector2">
+                    </div>
+                </div>
+                <div class="relative h-[330px] sm:h-[340px] mt-3  right-2 sm:left-20 sm:w-[320px]">
+                    <div class="">
+                        <img src="img/Maps.png" alt="map" class="absolute top-7 left-11">
+                    </div>
+                    <div class="">
+                        <img src="img/Maps.png" alt="map" class="absolute">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section contact -->
+     <section id="contact"  class="mx-16 w-6xl sm: w-[20px]">
+        <div class="border-2 border-transparent flex  flex-col-reverse sm:flex-row h-[110px] sm:h-[71px] p-4 items-center justify-between font-nav px-9 rounded-xl  gap-2"  style="background: 
+                linear-gradient(#161616, #161616) padding-box, 
+                radial-gradient(circle at bottom left, #F35034, #262626 50%) border-box;">
+            <p class="text-white text-[14px] sm:text-[17px]">Portfolio 2024</p>
+            <ul class="flex list-none gap-5 text-white text-[12px] sm:text-[14px]">
+                <a href="#">
+                    <li class="list-none hover:text-link  cursor-pointer">Twitter</li>
+                </a>
+                <a href="#">
+                    <li class=" list-none hover:text-link cursor-pointer">Instagram</li>
+                </a>
+                <a href="#">
+                    <li class="list-none hover:text-link cursor-pointer">LinkdIn</li>
+                </a>
+            </ul>
+            <div
+                class="border-2 border-bordure text-[10px] sm:text-[13px] text-contentext  flex justify-center items-center bg-body border-1 border-bordure rounded-4xl gap-2 h-[26px] w-[145px] sm:w-[181px]">
+                <div class="bg-texte rounded-4xl w-2 h-2"> </div>
+                AVAILABLE FOR JOB
+            </div>
+        </div>
+     </section>
+</body>
+
+</html>
